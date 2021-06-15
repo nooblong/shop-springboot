@@ -27,7 +27,6 @@ public class OrderController {
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
-        System.out.println(result);
         if (result != null) {
             orderService.addOrder(result);
             return new Result(200, "提交成功", result.toString());

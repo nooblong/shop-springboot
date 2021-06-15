@@ -2,6 +2,9 @@ package github.nooblong.r5shopspringboot.common.vo;
 
 public class NoPasswordUser {
     private int id;
+    private String username;
+    private int isAdmin;
+
 
     public int getId() {
         return id;
@@ -10,9 +13,6 @@ public class NoPasswordUser {
     public void setId(int id) {
         this.id = id;
     }
-
-    private String username;
-    private int isAdmin;
 
     public String getUsername() {
         return username;
